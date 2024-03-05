@@ -9,6 +9,8 @@
     <body>
         <h1>Master en PHP</h1>
         <?php
+        
+            //////VARIABLES//////
             $nombre = 'Pedro';
             $apellidos = 'Luque';
             $edad = 25;
@@ -68,7 +70,6 @@
             //Con esta función, podemos debugear una variable, mostrando el archivo desde el que se llama, su contenido y el tipo de dato de la variable.
             var_dump($cadena);
 
-
             //Constantes - No podemos cambiar su valor. Funcionan como un diccionario clave-valor.
             define('PI', 3.1416);
             echo '<br /><br />El valor de PI es ' . PI. '<br />';
@@ -81,10 +82,8 @@
             echo 'Nos encontramos en la línea ' . __LINE__ . '<br />'; //Nos muestra la línea actual del código en el que se encuentra.
             echo __FILE__ . '<br />'; //Nos muestra la ruta del fichero actual.
             echo __DIR__ . '<br />'; //Nos muestra la ruta del directorio actual.
-            
 
 
-        
         ?>
     </body>
 </html>
