@@ -6,6 +6,12 @@
     </head>
     <body>
         <h1>Master en PHP - Bucles</h1>
+        <form method="GET" action="index.php">
+            <p>
+                Introduce un valor para mostrar su tabla de multiplicar: <input type="text" name="multiplicator" id="num">
+                <input type="submit" value="enviar">
+            </p>
+        </form>
         <?php
             //BUCLES
             //Estructura while
@@ -57,6 +63,15 @@
                 echo '<br>';
             }
 
+            //Mostramos una tabla de multiplicar según el valor introducido por el usuario y recuperado por GET
+            $multiplyer = (int)$_GET['multiplicator'] ?? 1;
+            $number = 1;
+
+            while($number <= 10){
+                echo $multiplyer.' x '.$number.' = '.($multiplyer * $number).'<br>';
+                $number++;
+
+        }
         ?>
     </body>
 </html>
