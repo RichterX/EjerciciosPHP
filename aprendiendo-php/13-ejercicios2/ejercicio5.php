@@ -16,18 +16,6 @@
         array('COD', 'CRASH BANDICOOT', 'PES 19'),
         array('PUBG', 'PRINCE OF PERSIA', 'MOTOGP 19')
     );
-
-    /*
-    Mostramos el array para ver que todo está correcto
-    for ($i = 0 ; $i< 3 ; $i++)
-    {
-        for ($j = 0 ; $j < 3 ; $j++)
-        {
-            echo $videogames[$i][$j].' ';
-        }
-        echo '<br>';
-    }
-    */
 ?>
 
 <!DOCTYPE html>
